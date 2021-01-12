@@ -1,0 +1,252 @@
+/*  MAIN CSS  */
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+p{
+  font-size: 1em;
+  line-height: 1.5em;
+}
+a{
+  text-decoration: none;
+  color: yellow;
+}
+html{
+
+  height: 100%;
+}
+body{
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: fantasy;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+  }
+  
+.header_box{
+  text-align: center;
+  margin-top: -40px;
+}
+
+.footer_box{
+  text-align: center;
+  background-color: rgba(8, 8, 8, 0.767);
+  position: relative;
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 8%;
+  color: white;
+}
+/*  MENU CSS  */
+.menu_nav {
+  display: block;
+  padding: 2em 0 3em;
+  position: static;
+  margin-top: 30px;
+}
+.menu_nav a {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.9em 1.1em;
+  outline: none;
+  border: 3px solid rgba(131, 131, 131, 0.3);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+/*  SECTION CSS  */
+section{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px #bbb;
+  background-color: rgba(121, 121, 121, 0.747);
+}
+section h2{
+  margin: 20px 0;
+  width: 90%;
+}
+section > div{
+  width: 90%;
+}
+
+/*  PDP CSS  */
+.pdp_cv{
+  text-align: center;
+}
+.pdp_cv img{
+  width:150px;
+  height: 150px;
+  border: 5px solid rgb(59, 59, 59);
+  box-shadow: 0px 0px 10px #777;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+
+/*  PRESENTATION CSS  */
+.presentation{
+  border-bottom: 2px dashed #ccc;
+}
+.presentation a{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto 30px auto;
+  color: #fff;
+  background-color: #EA0;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 5px;
+
+}
+
+/*  CONTACT CSS  */
+.contact-flex{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.contact-flex p:first-child{
+  flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+  flex: 0 0 60%;
+}
+
+/*  SOCIAL CSS  */
+.social{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto 0px auto;
+}
+.social img{
+  width: 40px;
+  height: 40px;
+}
+
+/*  EXPERIENCE CSS  */
+.exp{
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.exp-logo{
+  flex: 0 0 25%;
+  max-width: 100px;
+}
+.exp-info{
+  display: flex;
+  flex-flow: column wrap;
+  flex:0 0 70%;
+  margin-left: 5%;
+}
+
+.exp img{
+  width: 100%;
+}
+.exp h3{
+  font-size: 1.2em;
+}
+.exp h4{
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/*  COMPETENCE CSS  */
+.comp{
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+.comp p{
+  flex: 0 0 40%;
+}
+.conteneur_barre{
+  flex: 0 0 60%;
+  border-radius: 5px;
+  background-color: grey;
+  border-bottom: 1px ridge grey;
+}
+
+/*  BARRE CSS  */
+.barre{
+  display: block;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/*  %BARRE CSS  */
+.c100{
+  width: 100%;
+  background-color: #4B8;
+  border-radius: 5px;
+}
+.c90{
+  width: 90%;
+  background-color: #4B8;
+  border-radius: 5px;
+}
+.c80{
+  width: 80%;
+  background-color: #4B8;
+  border-radius: 5px;
+}
+.c70{
+  width: 70%;
+  background-color: #4B8;
+  border-radius: 5px;
+}
+.c60{
+  width: 60%;
+  background-color: #4B8;
+  border-radius: 5px;
+}
+.c50{
+  width: 50%;
+  background-color: #4B8;
+  border-radius: 5px;
+}
+
+
+/*  INTERET CSS  */
+.interet{
+  flex: 0 1 50%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.interet img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px #555;
+}
+
+
+
+
+  /*  RESPENSIVE CSS  */
+  @media screen and (max-width: 800px){
+    a{
+      font-size: 10px;
+      
+    }
+    .menu_nav a{
+      
+      flex-flow : column wrap
+    }
+  }
