@@ -1,0 +1,82 @@
+/*  MAIN CSS  */
+
+body{
+  background-image: url(../img/bg.jpg);
+  background-repeat:no-repeat;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: fantasy;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header_box{
+  text-align: center;
+  margin-top: -40px;
+}
+
+.footer_box{
+  text-align: center;
+  background-color: rgba(8, 8, 8, 0.767);
+  position: relative;
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 8%;
+  color: white;
+}
+
+.menu_nav {
+  display: block;
+  padding: 2em 0 3em;
+  position: static;
+  margin-top: 30px;
+}
+.menu_nav a {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.9em 1.1em;
+  outline: none;
+  border: 3px solid rgba(131, 131, 131, 0.3);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+section{
+  display: box;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px #bbb;
+  background-color: rgba(121, 121, 121, 0.747);
+}
+
+section > div{
+  width: 80%;
+}
+
+
+.exp img{
+  width: 50%;
+}
+
+
+
+@media screen and (max-width: 800px){
+  a{
+    font-size: 10px;
+    
+  }
+  .menu_nav a{
+    
+    flex-flow : column wrap
+  }
+}
